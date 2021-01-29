@@ -1,0 +1,145 @@
+ h1, h2, h3, h4, h5{
+   
+   font-weight: bold;
+   color:white;
+ }
+ 
+ body {
+   color: #9ca1b2; 
+   background: #2a2c3b;
+  
+ }
+ 
+ nav,
+ #sidebar-wrapper {
+   background: #2f3242;
+ }
+
+
+ .filterSection{
+  margin-top: 1.50rem;
+  margin-bottom: 1.50rem;
+ }
+ .filterSection .sort {
+  float: right;
+  padding-right: 20px;
+}
+
+.whiteboard
+{
+  border-top-color: rgb(105, 105, 105);
+  border-top-style: solid;
+  border-top-width: 10px;
+  border-right-color: rgb(105, 105, 105);
+  border-right-style: solid;
+  border-right-width: 10px;
+  border-bottom-color: rgb(105, 105, 105);
+  border-bottom-style: solid;
+  border-bottom-width: 10px;
+  border-left-color: rgb(105, 105, 105);
+  border-left-style: solid;
+  border-left-width: 10px;
+   border: #696969 solid 10px;
+  -moz-box-shadow: 2px 3px 2px #888888;
+  -webkit-box-shadow: 2px 3px 2px #888888;
+  box-shadow: 2px 3px 2px #888888;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  overflow: auto;
+  min-height: 643px;
+  text-align: center;
+}
+
+.ideaBoardTitle{
+  margin: 15px;
+  text-align: center;
+}
+
+#board {
+	padding: 10px 10px 10px;
+	overflow-y: visible;
+}
+
+
+html,
+button,
+input,
+select,
+textarea {
+	color: #000000;
+}
+::selection {
+	background: #B3D4FC;
+	text-shadow: none;
+}
+a:focus {
+	outline: none;
+}
+::-webkit-input-placeholder {
+	color: rgba(0,0,0,.7);
+}
+
+:placeholder {
+	/* Firefox 18- */
+	color: rgba(0,0,0,.7);
+}
+
+.note {
+	margin: 10px 10px 10px 10px;
+	float: left;
+	display: block;
+	position: relative;
+	padding: 1em;
+	width: 200px;
+	min-height: 200px;
+	background: linear-gradient(top, rgba(0,0,0,.05), rgba(0,0,0,.25));
+	background-color: #FFFD75;
+	box-shadow: 5px 5px 10px -2px rgba(33,33,33,.3);
+	transform: rotate(2deg);
+	transform: skew(-1deg,1deg);
+	transition: transform .15s;
+	z-index: 1;
+	@extend .noflick;
+
+	&:hover {
+		cursor: move;
+	}
+	&.ui-draggable-dragging:nth-child(n) {
+		box-shadow: 5px 5px 15px 0 rgba(0,0,0,.3);
+		transform: scale(1.125) !important;
+		z-index: 100;
+		cursor: move;
+		transition: transform .150s;
+	}
+
+	textarea {
+		background-color: transparent;
+		border: none;
+		resize: vertical;
+		font-family: "Gloria Hallelujah", cursive;
+		width: 100%;
+		padding: 5px;
+	  height: 150px;
+	}
+	&:nth-child(2n) {
+		background: #FAAACA;
+	}
+	&:nth-child(3n) {
+		background: #69F098;
+	}
+}
+
+/* Button style  */
+.button {
+	font: bold 10px Helvetica, Arial, sans-serif;
+	color: #FFFFFF;
+	padding: 1em 2em;
+	background: linear-gradient(top, rgba(0,0,0,.15), rgba(0,0,0,.3));
+	background-color: #343a40;
+	border-radius: 3px;
+	float: right;
+	transition: transform .150s, background .01s;
+	@extend .noflick;
+
+}
